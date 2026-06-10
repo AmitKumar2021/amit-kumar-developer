@@ -107,6 +107,20 @@ body {
 .delay-700 { animation-delay: 0.7s; }
 .delay-800 { animation-delay: 0.8s; }
 
+/* ── Marquee (portfolio columns) ────────────────────────────────────── */
+@keyframes marqueeUp {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+@keyframes marqueeDown {
+  from { transform: translateY(-50%); }
+  to   { transform: translateY(0); }
+}
+.marquee-up   { animation: marqueeUp   26s linear infinite; }
+.marquee-down { animation: marqueeDown 26s linear infinite; }
+.marquee-up:hover,
+.marquee-down:hover { animation-play-state: paused; }
+
 /* ── Glassmorphism helper ────────────────────────────────────────────── */
 .glass {
   background: rgba(255, 255, 255, 0.1);
