@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
@@ -14,8 +15,22 @@ const COUNTRY_CODES = [
   { code: "+92", label: "🇵🇰 +92" }, { code: "+880", label: "🇧🇩 +880" },
 ];
 
-const NAV_LINKS = ["Home", "About Us", "Service", "Portfolio", "Resume", "Blog"];
-const SERVICES  = ["Brand Identity", "UI / UX Design", "Web Design", "Mobile App", "Framer Dev", "Design System"];
+const NAV_LINKS = [
+  { label: "Home",      href: "/"          },
+  { label: "About",     href: "/about"     },
+  { label: "Services",  href: "/services"  },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Resume",    href: "/resume"    },
+  { label: "Contact",   href: "/contact"   },
+];
+const SERVICES = [
+  { label: "Brand Identity",    href: "/services" },
+  { label: "UI / UX Design",    href: "/services" },
+  { label: "Web Design",        href: "/services" },
+  { label: "Mobile App",        href: "/services" },
+  { label: "CMS Development",   href: "/services" },
+  { label: "Design System",     href: "/services" },
+];
 
 const SOCIALS = [
   { label:"Facebook",   icon:<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> },
@@ -268,10 +283,10 @@ export default function Footer() {
           <div style={{ display:"flex", flexDirection:"column", gap:13 }}>
             <h4 style={{ fontFamily:"var(--font-urbanist),sans-serif", fontSize:15, fontWeight:700, color:"#fff", margin:"0 0 4px", letterSpacing:"-.01em" }}>Navigation</h4>
             {NAV_LINKS.map(l => (
-              <a key={l} href="#" className="ft-link"
+              <Link key={l.label} href={l.href} className="ft-link"
                 style={{ fontFamily:"var(--font-outfit),sans-serif", fontSize:14, color:"rgba(255,255,255,.50)", textDecoration:"none", width:"fit-content", transition:"color .2s" }}>
-                {l}
-              </a>
+                {l.label}
+              </Link>
             ))}
           </div>
 
@@ -279,10 +294,10 @@ export default function Footer() {
           <div style={{ display:"flex", flexDirection:"column", gap:13 }}>
             <h4 style={{ fontFamily:"var(--font-urbanist),sans-serif", fontSize:15, fontWeight:700, color:"#fff", margin:"0 0 4px", letterSpacing:"-.01em" }}>Services</h4>
             {SERVICES.map(s => (
-              <a key={s} href="#" className="ft-link"
+              <Link key={s.label} href={s.href} className="ft-link"
                 style={{ fontFamily:"var(--font-outfit),sans-serif", fontSize:14, color:"rgba(255,255,255,.50)", textDecoration:"none", width:"fit-content", transition:"color .2s" }}>
-                {s}
-              </a>
+                {s.label}
+              </Link>
             ))}
           </div>
 

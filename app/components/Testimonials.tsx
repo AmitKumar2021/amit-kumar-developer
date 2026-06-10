@@ -328,7 +328,7 @@ function NavArrow({
 /* ── Section ───────────────────────────────────────────────────── */
 export default function Testimonials() {
   const [tab, setTab]           = useState<Tab>("reviews");
-  const [current, setCurrent]   = useState(0);
+  const [current, setCurrent]   = useState(1);
   const [containerW, setContainerW] = useState(0);
   const [cardW, setCardW]       = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -336,7 +336,7 @@ export default function Testimonials() {
   const measure = useCallback(() => {
     if (!trackRef.current) return;
     const w = trackRef.current.offsetWidth;
-    const ratio = window.innerWidth >= 768 ? 0.64 : 0.82;
+    const ratio = window.innerWidth >= 768 ? 0.62 : 0.80;
     setContainerW(w);
     setCardW(Math.round(w * ratio));
     setCurrent(c => Math.min(c, REVIEWS.length - 1));
@@ -397,7 +397,7 @@ export default function Testimonials() {
           <div className="flex flex-col items-center gap-4 text-center">
             <h2
               style={{
-                fontFamily: "var(--font-outfit), sans-serif",
+                fontFamily: "var(--font-urbanist), sans-serif",
                 fontSize: "clamp(28px, 4vw, 48px)",
                 fontWeight: 500,
                 lineHeight: 1.3,
@@ -490,8 +490,21 @@ export default function Testimonials() {
           {tab === "reviews" ? (
             <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
 
-              {/* Centered-peek carousel track */}
-              <div ref={trackRef} style={{ overflow: "hidden" }}>
+              {/*
+                Centered-peek carousel track.
+                Negative margins cancel the dark-container's horizontal padding
+                so the track runs edge-to-edge within the rounded section.
+                The dark container's own overflow:hidden clips the peeking cards
+                at its rounded corners.
+              */}
+              <div
+                ref={trackRef}
+                style={{
+                  overflow: "hidden",
+                  marginLeft:  "calc(-1 * clamp(20px, 5vw, 71px))",
+                  marginRight: "calc(-1 * clamp(20px, 5vw, 71px))",
+                }}
+              >
                 <div
                   style={{
                     display: "flex",
@@ -503,7 +516,7 @@ export default function Testimonials() {
                   }}
                 >
                   {REVIEWS.map((r) => (
-                    <div key={r.id} style={{ width: cardW || "64%", flexShrink: 0 }}>
+                    <div key={r.id} style={{ width: cardW || "62%", flexShrink: 0 }}>
                       <ReviewCard {...r} />
                     </div>
                   ))}

@@ -8,7 +8,7 @@
   --orange-400: #FD853A;
   --orange-300: #FEB273;
 
-  --bg-page:     #F5F5F5;
+  --bg-page:     #FFFFFF;
   --bg-card:     #FFFFFF;
   --nav-bg:      #171717;
   --text-900:    #171717;
@@ -36,7 +36,7 @@ html.dark {
 
 /* ── Base ────────────────────────────────────────────────────────────── */
 body {
-  background-color: var(--bg-page);
+  background-color: #FFFFFF;
   color: var(--text-900);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -120,6 +120,30 @@ body {
 .marquee-down { animation: marqueeDown 26s linear infinite; }
 .marquee-up:hover,
 .marquee-down:hover { animation-play-state: paused; }
+
+/* ── Portfolio card shine sweep on hover ─────────────────────────────── */
+.shine-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.shine-wrap::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 3;
+  pointer-events: none;
+  transition: none;
+}
+.shine-wrap:hover::after {
+  height: 250%;
+  background-color: transparent;
+  transition: all 600ms linear !important;
+}
 
 /* ── Glassmorphism helper ────────────────────────────────────────────── */
 .glass {

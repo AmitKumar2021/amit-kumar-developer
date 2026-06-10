@@ -362,7 +362,7 @@ export default function BlogPosts() {
             }}
           >
             From my
-            <br />
+        
             blog post
           </h2>
 

@@ -105,7 +105,7 @@ function ServiceCard({
         <h3
           className="text-white font-medium tracking-[-0.015em]"
           style={{
-            fontFamily: "var(--font-outfit), sans-serif",
+            fontFamily: "var(--font-urbanist), sans-serif",
             fontSize: "clamp(18px, 1.8vw, 30px)",
             lineHeight: 1.3,
           }}
@@ -272,7 +272,7 @@ export default function Services() {
             <h2
               className="font-medium leading-none tracking-[-0.015em]"
               style={{
-                fontFamily: "var(--font-outfit), sans-serif",
+                fontFamily: "var(--font-urbanist), sans-serif",
                 fontSize: "clamp(30px, 4vw, 48px)",
                 color: "#FCFCFD",
               }}
