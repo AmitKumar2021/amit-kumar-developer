@@ -3,6 +3,7 @@ import { Urbanist, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import FloatingContact from "./components/FloatingContact";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
@@ -133,6 +134,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <FloatingContact />
       </body>
     </html>
   );
