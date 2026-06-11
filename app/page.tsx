@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import SkillsBanner from "./components/SkillsBanner";
@@ -10,15 +9,12 @@ import WhyHireMe from "./components/WhyHireMe";
 import BlogPosts from "./components/BlogPosts";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen" style={{ background: "#FFFFFF" }}>
-      <Navbar />
+    <main className="flex flex-col flex-1">
       <Hero />
       <Services />
-      
       <WorkExperience />
       <VisionSection />
       <WhyHireMe />
@@ -28,7 +24,6 @@ export default function Home() {
       <BlogPosts />
       <FAQ />
       <Contact />
-      <Footer />
     </main>
   );
 }

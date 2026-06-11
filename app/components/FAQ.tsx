@@ -4,32 +4,32 @@ import { useState } from "react";
 
 const FAQS = [
   {
-    q: "What types of clients do you work with?",
-    a: "We partner with early-stage startups, scaling SaaS teams, and enterprise AI companies. Whether you need a brand refresh, a product redesign, or a full design system, we've got you covered.",
+    q: "What web services do you offer?",
+    a: "I offer WordPress development, PHP & custom web development, e-commerce stores (WooCommerce/Shopify), SEO optimisation, API integration, and ongoing website maintenance. Whether you need a full website build or just improvements, I can help.",
   },
   {
-    q: "Can we start with a single page or broader scope?",
-    a: "Absolutely. We often start with a focused landing page or MVP design and scale the engagement from there based on your product needs and timeline.",
+    q: "How long does a website take to build?",
+    a: "A standard WordPress website typically takes 1–2 weeks. E-commerce stores or custom PHP projects take 3–5 weeks. I always agree on a clear timeline before starting so there are no surprises.",
   },
   {
-    q: "How fast can you deliver?",
-    a: "Typical turnaround is 1–2 weeks for a landing page and 3–6 weeks for a full product design. We'll agree on a clear timeline before work begins so there are no surprises.",
+    q: "What is your pricing?",
+    a: "Pricing depends on the project scope. WordPress sites start from ₹15,000, e-commerce stores from ₹20,000, and SEO packages from ₹8,000/month. Contact me for a free quote tailored to your needs.",
   },
   {
-    q: "Do you handle development too?",
-    a: "Design is our primary focus, but we produce dev-ready assets — annotated specs, design tokens, and Figma handoff files — that any front-end team can implement with ease.",
+    q: "Can you help improve my existing website?",
+    a: "Absolutely. I can audit your current site, fix performance issues, improve SEO, add new features, or redesign specific pages. Many clients come to me for ongoing maintenance and improvements.",
   },
   {
-    q: "Are your designs dev ready?",
-    a: "Yes. Every deliverable includes component-level Figma files, exported assets, spacing guides, and a style guide so developers can build pixel-perfect without back-and-forth.",
+    q: "Do you handle SEO after the website is built?",
+    a: "Yes. I offer ongoing SEO services including on-page optimisation, Google Search Console setup, keyword targeting, and monthly performance reports. A fast, well-structured site is just the starting point.",
   },
   {
-    q: "Do you design for all specific products?",
-    a: "We specialize in web apps, SaaS dashboards, mobile apps, and brand identities. If your project falls outside these, reach out and we'll let you know honestly if we're the right fit.",
+    q: "Will my website work on mobile?",
+    a: "Every website I build is fully responsive — it will look and work great on all devices including phones, tablets, and desktops. I test on multiple screen sizes before delivery.",
   },
   {
-    q: "What if I need help after launch?",
-    a: "We offer post-launch support packages for iteration, A/B testing assets, and ongoing design work. Many clients move into a monthly retainer after the initial engagement.",
+    q: "Do you provide support after launch?",
+    a: "Yes. I offer post-launch support and maintenance packages starting from ₹5,000/month. This covers updates, security patches, backups, and minor content changes so your site stays healthy and up to date.",
   },
 ];
 

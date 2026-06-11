@@ -3,8 +3,8 @@
 import Image from "next/image";
 
 const STATS = [
-  { value: "450+", label: "Project Completed" },
-  { value: "450+", label: "Project Completed" },
+  { value: "40+", label: "Projects Completed" },
+  { value: "5+",  label: "Years Experience" },
 ];
 
 export default function WhyHireMe() {
@@ -73,8 +73,9 @@ export default function WhyHireMe() {
                 maxWidth:   520,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus
-              nunc, posuere in justo vulputate, bibendum sodales.
+              5+ years building fast, clean websites for clients across India and overseas.
+              I specialise in WordPress, PHP, and front-end development — delivering on time,
+              within budget, and built to rank on Google.
             </p>
 
             {/* Stats */}

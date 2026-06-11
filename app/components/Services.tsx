@@ -5,32 +5,32 @@ import { useState, useRef, useEffect, useCallback } from "react";
 /* ── 6 service cards ───────────────────────────────────────────────── */
 const SERVICES = [
   {
-    title: "UI/ UX Design",
+    title: "WordPress Development",
     image: "/images/card-1.png",
     fallback: "linear-gradient(145deg,#C8A882,#A07850)",
   },
   {
-    title: "Web Design",
+    title: "PHP & Custom Dev",
     image: "/images/card-2.png",
     fallback: "linear-gradient(145deg,#E8905A,#C06030)",
   },
   {
-    title: "Landing Page",
+    title: "E-Commerce Stores",
     image: "/images/card-3.png",
     fallback: "linear-gradient(145deg,#8AAEC8,#507090)",
   },
   {
-    title: "Mobile App",
+    title: "SEO Optimisation",
     image: "/images/card-4.png",
     fallback: "linear-gradient(145deg,#A882C8,#705090)",
   },
   {
-    title: "Brand Identity",
+    title: "API Integration",
     image: "/images/card-5.png",
     fallback: "linear-gradient(145deg,#82C8A0,#509068)",
   },
   {
-    title: "Graphic Design",
+    title: "Website Maintenance",
     image: "/images/card-6.png",
     fallback: "linear-gradient(145deg,#C8B882,#908050)",
   },
@@ -148,6 +148,7 @@ function ServiceCard({
             <img
               src={image} alt={title}
               className="w-full h-full object-cover"
+              loading="lazy"
               onError={() => setImgOk(false)}
             />
           ) : (
@@ -288,8 +289,8 @@ export default function Services() {
                 maxWidth: 576,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus
-              nunc, posuere in justo vulputate, bibendum sodales
+              From custom WordPress builds to full e-commerce stores — fast,
+              clean, and SEO-ready websites that help your business grow online.
             </p>
           </div>
 
@@ -301,7 +302,6 @@ export default function Services() {
                 gap: GAP,
                 transform: `translateX(-${current * (cardW + GAP)}px)`,
                 transition: "transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94)",
-                willChange: "transform",
               }}
             >
               {SERVICES.map((s) => (

@@ -95,7 +95,7 @@ export default function SkillsBanner() {
     <section
       style={{
         position:   "relative",
-        background: "#FFFFFF",
+        background: "var(--bg-page)",
         overflow:   "hidden",
         height:     "clamp(160px, 18vw, 220px)",
       }}

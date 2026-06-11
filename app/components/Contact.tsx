@@ -31,21 +31,23 @@ const COUNTRY_CODES = [
 const STATS = [
   {
     icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="#FD853A">
-        <path d="M12 2L14.4 9.2H22L16.3 13.8L18.7 21L12 16.4L5.3 21L7.7 13.8L2 9.2H9.6L12 2Z" />
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+        stroke="#FD853A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
       </svg>
     ),
-    text: "4.9/5 Average Ratings",
+    text: "Response within 24 hours",
   },
   {
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
         stroke="#FD853A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="8" r="6" />
-        <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+        <rect x="2" y="3" width="20" height="14" rx="2" />
+        <path d="M8 21h8M12 17v4" />
       </svg>
     ),
-    text: "25+ Winning Awards",
+    text: "40+ Projects Delivered",
   },
   {
     icon: (
@@ -55,7 +57,7 @@ const STATS = [
         <polyline points="22 4 12 14.01 9 11.01" />
       </svg>
     ),
-    text: "Certified Product Designer",
+    text: "5+ Years Experience",
   },
 ];
 
@@ -106,11 +108,14 @@ export default function Contact() {
           width: 100%;
           background: var(--bg-card);
           border-radius: 100px;
-          border: 1.5px solid #E4E7EC;
+          border: 1.5px solid rgba(0,0,0,0.12);
           box-shadow: 0 4px 28px rgba(0,0,0,0.07);
           padding: 6px;
           gap: 0;
           transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        html.dark .c-pill {
+          border-color: rgba(255,255,255,0.12);
         }
         .c-pill:focus-within {
           border-color: #FD853A;
@@ -163,17 +168,19 @@ export default function Contact() {
         .c-div {
           width: 1.5px;
           height: 26px;
-          background: #E4E7EC;
+          background: rgba(0,0,0,0.10);
           flex-shrink: 0;
         }
+        html.dark .c-div { background: rgba(255,255,255,0.10); }
         /* mini divider inside phone field (between code & number) */
         .c-div-sm {
           width: 1px;
           height: 18px;
-          background: #D0D5DD;
+          background: rgba(0,0,0,0.10);
           flex-shrink: 0;
           margin: 0 4px;
         }
+        html.dark .c-div-sm { background: rgba(255,255,255,0.10); }
 
         /* ── send button ── */
         .c-send-btn {
@@ -210,9 +217,10 @@ export default function Contact() {
           }
           .c-field {
             padding: 4px 12px;
-            border: 1.5px solid #E4E7EC;
+            border: 1.5px solid rgba(0,0,0,0.10);
             border-radius: 12px;
           }
+          html.dark .c-field { border-color: rgba(255,255,255,0.10); }
           .c-input  { padding: 10px 0; }
           .c-select { padding: 10px 0; }
           .c-send-btn {

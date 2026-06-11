@@ -65,7 +65,7 @@ export default function Hero() {
           }}
         >
           I&apos;m <span style={{ color: "#FD853A" }}>Amit</span> Kumar,<br />
-          Full Stack Developer
+          Full-Stack &amp; Shopify Developer
         </h1>
 
         {/* ── Decorative arrow ────────────────────────────────────── */}
@@ -89,7 +89,7 @@ export default function Hero() {
               className="text-[17px] font-medium leading-[1.5] tracking-[-0.01em]"
               style={{ color: "var(--text-700)", fontFamily: "var(--font-outfit), sans-serif" }}
             >
-              Jenny&apos;s Exceptional product design ensure our website&apos;s success.{" "}
+              Amit built our WordPress site from scratch — fast, clean, and exactly what we needed.{" "}
               <em>Highly Recommended</em>
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function Hero() {
                   fontFamily: "var(--font-urbanist), sans-serif",
                 }}
               >
-                10 Years
+                5+ Years
               </p>
               <p
                 className="text-[18px] tracking-[-0.01em] mt-1"
@@ -148,7 +148,7 @@ export default function Hero() {
             >
               <Image
                 src="/images/ai-r.png"
-                alt="Jenny – Product Designer"
+                alt="Amit Kumar – Freelance Front-End Developer"
                 fill
                 priority
                 className="object-contain object-bottom"
@@ -224,7 +224,7 @@ export default function Hero() {
               className="text-[13px] font-medium leading-[1.5]"
               style={{ color: "var(--text-700)", fontFamily: "var(--font-outfit), sans-serif" }}
             >
-              Jenny&apos;s Exceptional product design ensure our website&apos;s success.
+              Amit built our WordPress site from scratch — fast, clean, and exactly what we needed.
             </p>
           </div>
           <div className="flex flex-col items-end gap-2">
@@ -239,7 +239,7 @@ export default function Hero() {
               className="font-bold text-[28px] leading-none tracking-[-0.015em]"
               style={{ color: "var(--text-900)", fontFamily: "var(--font-urbanist), sans-serif" }}
             >
-              10 Years
+              5+ Years
             </p>
             <p
               className="text-[13px]"

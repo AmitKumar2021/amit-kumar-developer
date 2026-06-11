@@ -5,10 +5,10 @@ import Image from "next/image";
 const LINKS = ["Evaluation & Design", "Custom software", "Web Development"];
 
 const STATS = [
-  { value: "12+",    label: "Years Of",     sub: "Experience"  },
-  { value: "2,554+", label: "Success",      sub: "Projects"    },
-  { value: "154+",   label: "Professional", sub: "Teams"       },
-  { value: "25+",    label: "Modern",       sub: "Offices"     },
+  { value: "5+",  label: "Years Of",    sub: "Experience"    },
+  { value: "40+", label: "Websites",    sub: "Delivered"     },
+  { value: "3",   label: "Countries",   sub: "Served"        },
+  { value: "98%", label: "Client",      sub: "Satisfaction"  },
 ];
 
 export default function VisionSection() {
@@ -131,7 +131,7 @@ export default function VisionSection() {
                   lineHeight: 1.55,
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Specialising in WordPress, PHP &amp; e-commerce — delivered on time.
               </p>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function VisionSection() {
                   lineHeight: 1,
                 }}
               >
-                12+
+                5+
               </span>
               <span
                 style={{
@@ -208,7 +208,7 @@ export default function VisionSection() {
                 marginBottom: 14,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              40+ websites delivered across India, UAE &amp; the UK.
             </p>
             <button
               className="transition-all duration-300"

@@ -83,7 +83,7 @@ export default function Navbar() {
             className="text-white font-bold text-[22px] tracking-tight"
             style={{ fontFamily: "var(--font-urbanist), sans-serif" }}
           >
-            JCREA
+            Amit Kumar
           </span>
         </Link>
 
@@ -114,7 +114,7 @@ export default function Navbar() {
             className="text-white font-bold text-[18px]"
             style={{ fontFamily: "var(--font-urbanist), sans-serif" }}
           >
-            JCREA
+            Amit Kumar
           </span>
         </Link>
 

@@ -5,25 +5,31 @@
 
 /* ── CSS design tokens ───────────────────────────────────────────────── */
 :root {
-  --orange-400: #FD853A;
-  --orange-300: #FEB273;
+  --orange-400:    #FD853A;
+  --orange-300:    #FEB273;
 
-  --bg-page:     #FFFFFF;
-  --bg-card:     #FFFFFF;
-  --nav-bg:      #171717;
-  --text-900:    #171717;
-  --text-700:    #344054;
-  --text-white:  #FFFFFF;
+  --bg-page:       #FFFFFF;
+  --bg-card:       #FFFFFF;
+  --bg-card-alt:   #F9FAFB;
+  --nav-bg:        #171717;
+  --text-900:      #111827;
+  --text-700:      #4B5563;
+  --text-muted:    #6B7280;
+  --text-white:    #FFFFFF;
+  --border-color:  #F0F0F0;
 
   --hero-bg: #FFFFFF;
 }
 
 html.dark {
-  --bg-page:   #0D0D0D;
-  --bg-card:   #1A1A1A;
-  --hero-bg:   #111111;
-  --text-900:  #F0F0F0;
-  --text-700:  #A0AABB;
+  --bg-page:      #0D0D0D;
+  --bg-card:      #161616;
+  --bg-card-alt:  rgba(255,255,255,0.04);
+  --hero-bg:      #111111;
+  --text-900:     #FFFFFF;
+  --text-700:     #CBD5E1;
+  --text-muted:   #8899AA;
+  --border-color: rgba(255,255,255,0.10);
 }
 
 /* ── Theme inline tokens for Tailwind utilities ─────────────────────── */
@@ -36,7 +42,7 @@ html.dark {
 
 /* ── Base ────────────────────────────────────────────────────────────── */
 body {
-  background-color: #FFFFFF;
+  background-color: var(--bg-page);
   color: var(--text-900);
   transition: background-color 0.3s ease, color 0.3s ease;
 }

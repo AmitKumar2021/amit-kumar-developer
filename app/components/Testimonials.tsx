@@ -9,47 +9,47 @@ const GAP = 24;
 const REVIEWS = [
   {
     id: 1,
-    name: "Fawzi Sayed",
-    role: "UI UX Designer",
+    name: "Rahul Sharma",
+    role: "Business Owner",
     rating: 5.0,
-    text: "consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.",
-    initials: "FS",
+    text: "Amit built our WordPress e-commerce store from scratch. The site loads super fast, looks great on mobile, and our Google rankings improved within weeks. Exactly what we needed!",
+    initials: "RS",
     color: "#FD853A",
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    role: "Product Manager",
+    name: "Priya Mehta",
+    role: "Founder, Lingo Nerds",
     rating: 5.0,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Exceptional work quality delivered with precision and creativity that truly elevates the brand.",
-    initials: "SJ",
+    text: "Outstanding work on our educational platform. Amit integrated the LMS and payment gateway seamlessly. Professional communication throughout and delivered ahead of schedule.",
+    initials: "PM",
     color: "#3B82F6",
   },
   {
     id: 3,
-    name: "Ahmed Hassan",
-    role: "Frontend Developer",
+    name: "Ahmed Al-Farsi",
+    role: "CEO, Markhor Transport",
     rating: 5.0,
-    text: "Outstanding design skills throughout the entire project. The final deliverables were pixel-perfect and exceeded our expectations. Professional communication at every stage.",
-    initials: "AH",
+    text: "We hired Amit to rebuild our company website. The new site is clean, fast, and works perfectly on all devices. SEO results have been excellent — highly recommended.",
+    initials: "AA",
     color: "#10B981",
   },
   {
     id: 4,
-    name: "Maria Garcia",
-    role: "Creative Director",
+    name: "Sanjay Verma",
+    role: "Director, Shankar Manpower",
     rating: 5.0,
-    text: "Absolutely brilliant work! Attention to detail and creative vision went beyond what we imagined. Will definitely collaborate again on future projects without any hesitation.",
-    initials: "MG",
+    text: "Amit redesigned our website and integrated API connections with our HR system. He was responsive, professional, and the final product far exceeded our expectations.",
+    initials: "SV",
     color: "#8B5CF6",
   },
   {
     id: 5,
-    name: "James Wilson",
-    role: "Startup Founder",
+    name: "David Clarke",
+    role: "Owner, Euro Bild",
     rating: 5.0,
-    text: "Incredible talent and professionalism shown throughout our engagement. The brand identity and web design created for our startup was exactly what we needed to stand out.",
-    initials: "JW",
+    text: "Great experience working with Amit on our WordPress site. He understood our requirements quickly, kept us updated throughout, and delivered a polished result on time.",
+    initials: "DC",
     color: "#EC4899",
   },
 ];
@@ -424,9 +424,8 @@ export default function Testimonials() {
                 margin: 0,
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum
-              ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              lobortis orci elementum egestas lobortis.
+              Real feedback from real clients. I&apos;ve helped businesses across India,
+              the UAE, and the UK build websites that look great and perform even better.
             </p>
           </div>
 

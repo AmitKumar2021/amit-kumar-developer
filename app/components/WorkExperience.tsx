@@ -5,28 +5,28 @@ import { useEffect, useRef, useState } from "react";
 /* ── Timeline data ─────────────────────────────────────────────────── */
 const TIMELINE = [
   {
-    company: "Cognizant, Mumbai",
-    period:  "Sep 2016 – July 2020",
-    role:    "Experience Designer",
-    desc:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales",
+    company: "AsiaTech Inc., Noida",
+    period:  "Mar 2021 – Jun 2022",
+    role:    "Junior Web Developer",
+    desc:    "Built websites using PHP, MySQL, and WordPress. Ensured cross-browser compatibility and stayed current with industry trends.",
   },
   {
-    company: "Sugee Pvt Limited, Mumbai",
-    period:  "Sep 2020 – July 2023",
-    role:    "UI/UX Designer",
-    desc:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales",
+    company: "AdsRole Pvt. Ltd, Noida",
+    period:  "Jun 2022 – Oct 2023",
+    role:    "WordPress Developer",
+    desc:    "Developed and maintained custom WordPress themes, optimised site performance, and delivered e-commerce solutions for clients.",
   },
   {
-    company: "Cinetstox, Mumbai",
-    period:  "Sep 2023 – Dec 2024",
-    role:    "Lead UX Designer",
-    desc:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales",
+    company: "Payexel Solutions, Noida",
+    period:  "Oct 2023 – Feb 2024",
+    role:    "Front-End Developer",
+    desc:    "Delivered REST API integrations, SEO-optimised front-end builds, and clean production-ready code for fintech clients.",
   },
   {
-    company: "Freelance, Mumbai",
-    period:  "Jan 2025 – Present",
-    role:    "Senior Full Stack Developer",
-    desc:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales",
+    company: "AdsRole Pvt. Ltd, Noida",
+    period:  "Feb 2024 – Present",
+    role:    "Senior Front-End Developer",
+    desc:    "Lead front-end development across multiple projects, mentoring juniors, integrating APIs, and driving SEO best practices.",
   },
 ];
 

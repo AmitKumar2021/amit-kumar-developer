@@ -24,12 +24,12 @@ const NAV_LINKS = [
   { label: "Contact",   href: "/contact"   },
 ];
 const SERVICES = [
-  { label: "Brand Identity",    href: "/services" },
-  { label: "UI / UX Design",    href: "/services" },
-  { label: "Web Design",        href: "/services" },
-  { label: "Mobile App",        href: "/services" },
-  { label: "CMS Development",   href: "/services" },
-  { label: "Design System",     href: "/services" },
+  { label: "WordPress Development", href: "/services" },
+  { label: "PHP & Custom Dev",      href: "/services" },
+  { label: "E-Commerce Stores",     href: "/services" },
+  { label: "SEO Optimisation",      href: "/services" },
+  { label: "API Integration",       href: "/services" },
+  { label: "Website Maintenance",   href: "/services" },
 ];
 
 const SOCIALS = [
@@ -231,7 +231,7 @@ export default function Footer() {
           borderBottom:"1px solid rgba(255,255,255,0.08)",
         }}>
           <p style={{ fontFamily:"var(--font-urbanist),sans-serif", fontSize:"clamp(26px,3.5vw,46px)", fontWeight:700, color:"#fff", margin:0, letterSpacing:"-.02em", lineHeight:1.1 }}>
-            Lets Connect there
+            Let&apos;s build something great
           </p>
           <button onClick={() => setModal(true)}
             style={{ display:"inline-flex", alignItems:"center", gap:8, background:"#FD853A", color:"#fff", border:"none", borderRadius:100, padding:"12px 28px", fontFamily:"var(--font-outfit),sans-serif", fontSize:15, fontWeight:600, cursor:"pointer", transition:"transform .2s,box-shadow .2s", whiteSpace:"nowrap" }}
@@ -261,11 +261,11 @@ export default function Footer() {
                   <path d="M11 3l4 16M15 19l4-16" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <span style={{ fontFamily:"var(--font-urbanist),sans-serif", fontWeight:800, fontSize:21, color:"#fff", letterSpacing:"-.02em" }}>JCREA</span>
+              <span style={{ fontFamily:"var(--font-urbanist),sans-serif", fontWeight:800, fontSize:21, color:"#fff", letterSpacing:"-.02em" }}>Amit Kumar</span>
             </div>
 
             <p style={{ fontFamily:"var(--font-outfit),sans-serif", fontSize:14, color:"rgba(255,255,255,.42)", lineHeight:1.72, margin:0, maxWidth:230 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed conque interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+              Senior Front-End Developer &amp; Freelancer based in New Delhi, India. Specialising in WordPress, PHP, SEO, and API integration.
             </p>
 
             {/* socials */}
@@ -305,9 +305,9 @@ export default function Footer() {
           <div style={{ display:"flex", flexDirection:"column", gap:13 }}>
             <h4 style={{ fontFamily:"var(--font-urbanist),sans-serif", fontSize:15, fontWeight:700, color:"#fff", margin:"0 0 4px", letterSpacing:"-.01em" }}>Contact</h4>
             {[
-              "+20 11 43 63 73 41",
-              "fawzisayed1209@gmail.com",
-              "fawziulux.com",
+              "+91-8960749497",
+              "amit100894@gmail.com",
+              "New Delhi, India",
             ].map(t => (
               <span key={t} style={{ fontFamily:"var(--font-outfit),sans-serif", fontSize:14, color:"rgba(255,255,255,.50)", display:"block" }}>{t}</span>
             ))}
@@ -340,7 +340,7 @@ export default function Footer() {
           flexWrap:"wrap", gap:8,
         }}>
           <p style={{ fontFamily:"var(--font-outfit),sans-serif", fontSize:13, color:"rgba(255,255,255,.3)", margin:0 }}>
-            Copyright© 2023 Fawziulux. All Rights Reserved.
+            Copyright © 2025 {/* Amit Kumar */}. All Rights Reserved.
           </p>
           <div style={{ display:"flex", gap:6, alignItems:"center" }}>
             {["User Terms & Conditions", "Privacy Policy"].map((t, i) => (
