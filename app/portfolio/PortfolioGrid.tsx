@@ -39,7 +39,7 @@ export default function PortfolioGrid() {
               background: active === cat ? "#FD853A" : "var(--bg-card-alt)",
               color: active === cat ? "#fff" : "var(--text-700)",
               border: active === cat ? "none" : "1px solid var(--border-color)",
-              border: "none", borderRadius: 40, padding: "9px 20px",
+              borderRadius: 40, padding: "9px 20px",
               cursor: "pointer", transition: "all 0.2s",
             }}
           >
